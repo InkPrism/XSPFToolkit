@@ -14,6 +14,8 @@ def main():
 				outf.write('\t</trackList>\n</playlist>')
 		outf.close()
 		inpf.close()
+	else:
+		print('Well, are you sure, that this file exists?\n' + str(path))
 
 if __name__ == '__main__':
 	main()
