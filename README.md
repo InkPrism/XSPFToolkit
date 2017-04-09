@@ -62,4 +62,25 @@ After:
 <track><title>Sick H1P-H0P</title><location>file:///mp3s/song_1.mp3</location></track></trackList></playlist> 
 ```
 
+## xspfcreator
+It creates a xspf-styled file out of a list of file paths.
+
+Before:  
+```
+file:///song_1.mp3
+file:///song_2.mp3
+file:///song_3.mp3
+```
+
+After:  
+```xml
+<?xml version="1.0" encoding="UTF-8"?><playlist version="1" xmlns="http://xspf.org/ns/0/">
+	<trackList>
+		<track><location>file:///song_1.mp3</location></track>
+		<track><location>file:///song_2.mp3</location></track>
+		<track><location>file:///song_3.mp3</location></track>
+	</trackList>
+</playlist>
+```
+
 ### Have fun
