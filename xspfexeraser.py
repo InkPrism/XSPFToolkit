@@ -4,7 +4,6 @@ def erase(path):
 	if os.path.isfile(path):
 		with open(path, 'rt', encoding="utf-8") as inpf:
 			fr = inpf.read()
-			#fr = re.sub(r"<playlist.+( xmlns:.+?=\".+?\")", "", fr)
 			fr = re.sub(r"( xmlns:.+?=\".+?\")", "", fr)
 			fr = re.sub(r"(<extension.+?>.+?</extension>)", "", fr)
 			with open(path, 'wt', encoding="utf-8") as outf:
