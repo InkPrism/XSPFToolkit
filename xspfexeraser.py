@@ -1,4 +1,4 @@
-import re, os.path
+import re, os.path, sys
 
 def erase(path):
 	if os.path.isfile(path):
@@ -13,7 +13,7 @@ def erase(path):
 	else:
 		print('Well, are you sure, that this file exists?\n' + str(path))
 def main():
-	path = input('>File: ')
+	path = str(sys.argv[1])
 	erase(path)
 if __name__ == '__main__':
 	main()

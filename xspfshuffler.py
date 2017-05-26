@@ -1,7 +1,7 @@
-import re, os.path, random
+import re, os.path, random, sys
 
 def main():
-	path = input('>File: ')
+	path = str(sys.argv[1])
 	if os.path.isfile(path):
 		with open(path, 'rt', encoding='utf-8') as inpf:	
 			fr = inpf.read()
