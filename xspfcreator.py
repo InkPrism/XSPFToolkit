@@ -21,7 +21,6 @@ def main():
 					outf.write('<?xml version="1.0" encoding="UTF-8"?><playlist version="1" xmlns="http://xspf.org/ns/0/">\n\t<trackList>\n')
 					for line in lines:
 						outf.write('\t\t<track><location>' + str(line) + '</location></track>\n')
-						print(line)
 					outf.write('\t</trackList>\n</playlist>')
 			outf.close()
 			inpf.close()
