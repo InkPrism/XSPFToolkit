@@ -63,8 +63,8 @@ After:
 ```
 
 ## xspfcreator
-It creates a xspf-styled file out of a list of file paths.
-
+It creates a xspf-styled file out of a list of file paths.  
+*(By default, it will change the contents of the given files. If you just want a command-line output, use: '--only-print' )*
 Before:  
 ```
 file:///song_1.mp3
