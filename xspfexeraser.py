@@ -13,7 +13,8 @@ def erase(path):
 	else:
 		print('Well, are you sure, that this file exists?\n' + str(path))
 def main():
-	path = str(sys.argv[1])
-	erase(path)
+	for k in range(1, len(sys.argv)):
+		path = str(sys.argv[k])
+		erase(path)
 if __name__ == '__main__':
 	main()
