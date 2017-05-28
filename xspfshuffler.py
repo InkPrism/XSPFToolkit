@@ -9,7 +9,7 @@ def main():
 				fr = fr.replace("\n", "")
 				fr = fr.replace("\t", "")
 				with open(path, 'wt', encoding='utf-8') as outf:
-					outf.write(re.search(r'(.+?)<track>', fr).group(0))
+					outf.write(re.findall(r'(.+?)<track>', fr)[0])
 					lstot = []
 					for m in re.finditer(r'(<track>.+?</track>)', fr):
 						lstot.append(str(m.group(0)))
